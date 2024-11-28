@@ -42,7 +42,7 @@ For real-world data:
 ```python
 data_path='.../data/360_v2/bicycle'
 out_path='.../results/bicycle_IMC' #
-python -u active_cam.py -s $data_path -m $out_path  --eval   --method=VI_MC --iterations 2000  --cam_seqeunce 0   --num_views 20 --with_uncertainty  --bg_weight 0. --rank 2 --random_init_pcd  --resolution 8
+python -u active_cam.py -s $data_path -m $out_path  --eval   --method=VI_MC --iterations 2000  --cam_seqeunce 0   --num_views 20 --with_uncertainty  --bg_weight 0. --rank 2 --random_init_pcd  --resolution 8 --volume_scale 0.3
 ```
 ## Camera Optimization
 This is the code for differentiable camera optimization. 
